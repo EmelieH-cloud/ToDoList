@@ -9,44 +9,47 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Study planner!</h1>
-    <p>It's simple - choose the activity type, required duration and what your current status on the task is. </p>
-    <form action="/action_page.php">
-      <div class="containOptions">
-      <label for="activity" class="">Choose activity type: </label>
-      <select id="activity" name="activity" class="lists">
-        <option value="Reading">Reading</option>
-        <option value="Writing">Writing</option>
-        <option value="Listening">Listening</option>
-      </select>
-    </div>
-    <div class="containOptions">
-      <label for="duration">Choose duration: </label>
-      <select id="duration" name="duration" class="lists">
-        <option value="15">15 min</option>
-        <option value="30">30 min</option>
-        <option value="60">1 hour</option>
-      </select>
-    </div>
-    <div class="containOptions"> 
-    <label for="status">Choose status: </label>
-      <select id="status" name="status" class="lists">
-        <option value="Not finished">Not finished</option>
-        <option value="Finished">Finished</option>
-      </select>
-      <button id ="submit" class="submit">Submit</button>
-      </div>
-    </form>
 
+    <h1>Welcome to your study planner!</h1>
     
-<div id="output">
-  <table id="tasks">
-      <tr>
-          <th></th>
-      </tr>
-  </table>
-</div>
+    <h2 id="max">Don't burn yourself out! maximum of tasks is 10!</h2>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="containOptions">
+    <label for="activity" class="">Choose activity type: </label>
+    <select id="activity" name="activity" class="lists">
+      <option value="Reading">Reading</option>
+      <option value="Writing">Writing</option>
+      <option value="Listening">Listening</option>
+    </select>
+    </div>
+
+    <div class="containOptions">
+    <label for="duration">Choose duration: </label>
+    <select id="duration" name="duration" class="lists">
+      <option value="15">15 min</option>
+      <option value="30">30 min</option>
+      <option value="60">1 hour</option>
+    </select>
+    </div>
+
+    <div class="containOptions">
+  <label for="status">Choose status: </label>
+    <select id="status" name="status" class="lists">
+      <option value="Not finished" id="notdone">Not finished</option>
+      <option value="Finished">Finished</option>
+    </select>
+    </div>
+
+    <h3 id="count">Number of tasks</h3>
+    <button id ="submit" class="submit">Submit</button>
+    <button id ="undo" class="clear">Undo submit</button>
+    <div class="tableContainer">
+    <table id="tasks">
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+</div>
+	<script src="script.js"></script>
+</body>
 </html>
