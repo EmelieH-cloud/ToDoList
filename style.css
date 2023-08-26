@@ -1,23 +1,29 @@
+.submit
+{
+    position: absolute; 
+    bottom: 20%; 
+    font-size: 2.5em;
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    background: white;
+    right: 60%; 
+}
 
-
+#clear
+{
+    position: absolute; 
+    bottom: 10%; 
+    font-size: 2.5em;
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    background: white;
+    right: 60%; 
+}
 
 body
 {
     font-family: 'Amatic SC';
-    background: pink;
-}
-
-.containOptions
-{
-    display: flex;
-    border: 2px solid black;
-    margin: 5%; 
-    width: 35vh;
-    background-color: white; 
-}
-h1
-{
-    font-size: 3em;
+    background: lightblue;
 }
 
 p
@@ -34,23 +40,73 @@ label
     padding: 2%; 
 }
 
-.submit
+.containOptions
 {
-    position: absolute; 
-    bottom: 20%; 
-    font-size: 2.5em;
-    font-family: 'Amatic SC';
-    font-weight: bolder;
-    background: white;
-    right: 60%; 
+    display: flex;
+    border: 2px solid black;
+    margin: 5%; 
+    width: 35vh;
+    background-color: white; 
 }
 
+.tableContainer
+{
+    position: absolute; 
+    left: 50%; 
+    top: 20%; 
+    width: 40vw;
+    height: 60vh; 
+    background-color: white; 
+   
+}
 .lists
 {
     position: absolute;
-    font-size: 1.7em;
     font-weight: 800;
+    font-size: 2em;
     font-family: 'Amatic SC';
     right: 60%; 
     width: 20vh; 
+}
+
+#tasks
+{
+    font-weight: 800;
+    font-size: 2em;
+
+}
+
+#count
+{
+    position: absolute;
+    left: 50%;
+    top: 80%;  
+    font-weight: 800;
+    font-size: 3em;
+}
+
+#max
+{
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    left: 60%;
+    top: 5%; 
+    
+}
+
+h1
+{
+    font-size: 3em;
+    font-weight: bolder; 
+}
+
+#undo
+{
+    position: absolute;
+    right: 60%; 
+    top: 90%;  
+    font-weight: 800;
+    font-family: 'Amatic SC';
+    font-size: 1.5em;
 }
